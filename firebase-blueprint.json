@@ -1,0 +1,31 @@
+{
+  "entities": {
+    "user": {
+      "title": "User",
+      "description": "User profile tied to Firebase Auth",
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string",
+          "enum": ["technician", "supervisor", "admin"]
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": ["email", "role", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": {
+        "$ref": "#/entities/user"
+      },
+      "description": "Store user profiles."
+    }
+  }
+}

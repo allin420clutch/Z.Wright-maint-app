@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-zinc-100: #e0e2e5;
+  --color-zinc-200: #cbd5e1;
+  --color-zinc-300: #cbd5e1;
+  --color-zinc-400: #94a3b8;
+  --color-zinc-500: #64748b;
+  --color-zinc-600: #475569;
+  --color-zinc-700: #2d3139;
+  --color-zinc-800: #1a1d23;
+  --color-zinc-900: #12141a;
+  --color-zinc-950: #0a0b0d;
+
+  --color-amber-400: #fb923c;
+  --color-amber-500: #f97316;
+  --color-amber-600: #ea580c;
+}
